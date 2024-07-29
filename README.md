@@ -6,6 +6,8 @@ This is an somewhat unfinished university project and the first library I’ve e
 
 Jim Kramer | KD HTW Berlin 2024 
 
+[toMgjson.zip](https://github.com/user-attachments/files/16417032/toMgjson.zip)
+
 ## **new ToMgjson()**
 
 Creates an instance of the of the “ToMgjson” class. The class takes five arguments, two of them are optional.
