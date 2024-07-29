@@ -93,8 +93,8 @@ import tomgjson.*;
 ToMgjson mgjson;
 
 void setup() {
-	int sampleCount = 100; // set stream lenght to 100 frames
-	String path = "/Users/jimkramer/Desktop/mousePos.mgjson"; // set path where file is created
+  int sampleCount = 100; // set stream lenght to 100 frames
+  String path = "/Users/jimkramer/Desktop/mousePos.mgjson"; // set path where file is created
   String[] displayNames = {"x", "y"}; // set names for streams in the After Effects timeline
   mgjson = new ToMgjson(sampleCount, path, displayNames); // create Mgjson class innstance
 
