@@ -38,8 +38,8 @@ import tomgjson.*;
 ToMgjson mgjson;
 
 void setup() {
-	int sampleCount = 100;
-	String path = "/Your/file/path/your-file-name.mgjson";
+  int sampleCount = 100;
+  String path = "/Your/file/path/your-file-name.mgjson";
   String[] displayNames = {"x", "y"};
   // int digitsInteger = 3;
   // int digitsDecimal = 4;
