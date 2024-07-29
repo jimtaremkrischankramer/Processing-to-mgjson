@@ -101,14 +101,12 @@ void draw() {
 
 Import .mgjson file just like you would import footage and drag it on the timeline:
 
-![import](https://github.com/jimtaremkrischankramer/toMgjson/web/readme_img/import.png?raw=true)
+<img width="495" alt="import" src="https://github.com/user-attachments/assets/2a0947b7-48e3-4b31-92e8-69d4ee638218">
 
 Split dimensions of the position value of the layer you want to move by right clicking:
 
-![Bildschirmfoto 2024-07-29 um 02.36.17.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/be048de9-4f02-497b-8f49-1837c85ac3f8/662be881-062e-4d3c-95b2-af14bb3a25f1/Bildschirmfoto_2024-07-29_um_02.36.17.png)
+<img width="526" alt="split" src="https://github.com/user-attachments/assets/2dcb778e-34ef-4214-b8ec-d13cff504345">
 
 Link the x and y values of the layer to their respective values in the mgjson data:
 
-![Bildschirmfoto 2024-07-29 um 02.48.03.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/be048de9-4f02-497b-8f49-1837c85ac3f8/1d5777e5-c3d1-4af2-a0ce-04180333cd94/3a8690b8-d41a-4c14-958d-c681479dab4c.png)
-
-A Masterpiece:
+![link](https://github.com/user-attachments/assets/32b366b0-39f3-4dc2-8c79-f9d4f486fab1)
