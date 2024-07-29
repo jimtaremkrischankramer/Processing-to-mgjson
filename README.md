@@ -22,12 +22,12 @@ Creates an instance of the of the “ToMgjson” class. The class takes five arg
 - **int** sampleCount → Amount of frames written to file.
 - **String** path → Path to where the file will be created and file name
     - Must end in “../your-file-name.mgjson”.
-- **String[]** displayNames → An array of Names later displayed in the After Effects Timeline.
-- **int** digitsInteger (optional) →Amount of Integer digits in the Data written to file (defaults to five).
+- **String[]** displayNames → An array of names later displayed in the After Effects timeline.
+- **int** digitsInteger (optional) → Amount of integer digits in the Data written to file (defaults to five).
     - example: float 12.3f
     - default: “00012.30”
     - digitsInteger = 3: “012.30”
-- **int** digitsDecimal (optional) →Amount of Decimal digits in the Data written to file (defaults to two).
+- **int** digitsDecimal (optional) → Amount of decimal digits in the data written to file (defaults to two).
     - example: float 12.345f
     - default: “00012.34”
     - digitsInteger = 4: “00012.3450”
@@ -51,7 +51,7 @@ void setup() {
 
 ## updateStreams()
 
-gets called every Frame thats suppose to be written to file. The function takes two arguments.
+gets called every Frame thats supposed to be written to file. The function takes two arguments.
 
 - **int** currentFrame → The current frame number
     - Must start at 1 and increase by 1 every time the function is called.
@@ -70,8 +70,8 @@ void draw() {
 
 ## Tips and Trick (for Processing and After Effects)
 
-- Every frame passed to updateStreams() corresponds to one frame in After effects, so it could be useful to set the Processing frame rate the same as in your After Effects composition with frameRate().
-- The Position value in the After Effects timeline can be right clicked on and split into x, y (and z).
+- Every frame passed to updateStreams() corresponds to one frame in After Effects, so it could be useful to set the Processing frame rate the same as in your After Effects composition with frameRate().
+- The position value in the After Effects timeline can be right clicked on and split into x, y (and z).
 - If you want to write data every frame, but don’t want to start with the first, you could do it like this:
 
 ```java
@@ -119,3 +119,5 @@ Split dimensions of the position value of the layer you want to move by right cl
 Link the x and y values of the layer to their respective values in the mgjson data:
 
 ![link](https://github.com/user-attachments/assets/32b366b0-39f3-4dc2-8c79-f9d4f486fab1)
+
+Done!
