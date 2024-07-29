@@ -9,9 +9,10 @@ Jim Kramer | KD HTW Berlin 2024
 
 ## **Install for Processing**
 
-Download this .zip file:
-[toMgjson.zip](https://github.com/user-attachments/files/16417032/toMgjson.zip)
+Download this .zip file: [toMgjson.zip](https://github.com/user-attachments/files/16417032/toMgjson.zip).
+
 Unzip it in your Processing libraries folder (probably /Users/username/Documents/Processing/libraries or something).
+
 Done! (You might have to restart Processing)
 
 ## **new ToMgjson()**
