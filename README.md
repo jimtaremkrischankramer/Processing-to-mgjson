@@ -72,3 +72,43 @@ int startFrame = 50;
     mgjson.updateStreams(currentFrame, updateObjects); 
   }
 ```
+## Example
+
+In this example we’ll track the mouse position relative to the Processing canvas and use that data in After Effects to move a layer.
+
+This is the Processing script:
+
+```java
+import tomgjson.*;
+
+ToMgjson mgjson;
+
+void setup() {
+	int sampleCount = 100; // set stream lenght to 100 frames
+	String path = "/Users/jimkramer/Desktop/mousePos.mgjson"; // set path where file is created
+  String[] displayNames = {"x", "y"}; // set names for streams in the After Effects timeline
+  mgjson = new ToMgjson(sampleCount, path, displayNames); // create Mgjson class innstance
+
+  frameRate(25);
+  size(512, 512);
+}
+
+void draw() {
+  Object [] updateObjects = {mouseX, mouseY}; // create an array of objects with the current mouse x and y position
+  mgjson.updateStreams(frameCount, updateObjects); // update stream values
+}
+```
+
+Import .mgjson file just like you would import footage and drag it on the timeline:
+
+![Bildschirmfoto 2024-07-29 um 02.33.41.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/be048de9-4f02-497b-8f49-1837c85ac3f8/b31da793-2d5d-4853-a7ec-6ac9b46f4fd6/Bildschirmfoto_2024-07-29_um_02.33.41.png)
+
+Split dimensions of the position value of the layer you want to move by right clicking:
+
+![Bildschirmfoto 2024-07-29 um 02.36.17.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/be048de9-4f02-497b-8f49-1837c85ac3f8/662be881-062e-4d3c-95b2-af14bb3a25f1/Bildschirmfoto_2024-07-29_um_02.36.17.png)
+
+Link the x and y values of the layer to their respective values in the mgjson data:
+
+![Bildschirmfoto 2024-07-29 um 02.48.03.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/be048de9-4f02-497b-8f49-1837c85ac3f8/1d5777e5-c3d1-4af2-a0ce-04180333cd94/3a8690b8-d41a-4c14-958d-c681479dab4c.png)
+
+A Masterpiece:
