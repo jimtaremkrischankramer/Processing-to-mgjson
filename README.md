@@ -4,7 +4,7 @@ Although it was intended for and tested in Processing, it doesn’t rely on proc
 
 This is an somewhat unfinished university project and the first library I’ve ever written, so please consider the pain you might encounter working with it.
 
-Jim Kramer | KD HTW Berlin 2024 
+Jim Tarem Krischan Kramer | KD HTW Berlin 2024 
 
 
 ## **Install for Processing**
